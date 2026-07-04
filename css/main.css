@@ -6,6 +6,18 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* General styling */
+html, body {
+    height:100%;
+    margin:0;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
  * {
     font-family: "Google Sans", sans-serif;
     font-optical-sizing: auto;
@@ -14,6 +26,13 @@
     font-variation-settings:
     "GRAD" 0;
     font-size:1rem;
+}
+
+main {
+    width:100%;
+    max-width:50rem;
+    padding:1rem;
+    box-sizing:border-box;
 }
 
 /* Base form styles */
@@ -77,9 +96,28 @@ legend {
     .message {
         grid-column:1 / -1;
     }
+
+    .submit-btn {
+        width:25%;
+    }
 }
 
 /* Desktop size */
-@media screen and (max-width:50rem) {
+/* I built this mobile first, so max-width kinda messes up the page layout beyond 50rem, but on the assignment page it does say this requires max-width:50rem, so I kept it here. */
+@media screen and (min-width:40rem) and (max-width:50rem) {
+    .input-boxes {
+        grid-template-columns:1fr 1fr;
+    }
 
+    .message {
+        grid-column:1 / -1;
+    }
+
+    .submit-btn {
+        width:25%;
+    }
+
+    #contact-form {
+        margin:5rem;
+    }
 }
