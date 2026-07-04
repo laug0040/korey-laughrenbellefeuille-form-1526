@@ -34,21 +34,27 @@ legend {
     flex-direction:column;
 }
 
-.labels > div > input,
-.labels > div > textarea {
+.input-boxes {
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+}
+
+.labels > .input-boxes > div > input,
+.labels > .input-boxes > div > textarea {
     border:#979797 1px solid;
     border-radius:3px;
     width:100%;
     height:2rem;
 }
 
-.labels > .message > textarea {
+.labels > .input-boxes > .message > textarea {
     min-height:5rem;
     vertical-align:top;
     resize:vertical;
 }
 
-.labels > div {
+.labels > div > div {
     margin-top:1rem;
     margin-bottom:1rem;
 }
@@ -63,8 +69,14 @@ legend {
 }
 
 /* Tablet size */
-@media screen and (max-width:40rem) {
+@media screen and (min-width: 25rem) and (max-width: 40rem) {
+    .input-boxes {
+        grid-template-columns:1fr 1fr;
+    }
 
+    .message {
+        grid-column:1 / -1;
+    }
 }
 
 /* Desktop size */
