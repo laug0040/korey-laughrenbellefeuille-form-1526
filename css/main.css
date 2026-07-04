@@ -17,17 +17,14 @@
 }
 
 /* Base form styles */
-form {
+fieldset {
     background-color:#f0f0f0;
+    border:#979797 1px solid;
 }
 
 legend {
     font-size:2rem;
     background-color:#ffffff;
-    border:#979797 1px solid;
-}
-
-.labels {
     border:#979797 1px solid;
 }
 
