@@ -1,6 +1,7 @@
-/* Colors */
+/* Colours */
 /* Button color: #1582f7 */
 /* Grey color: #f0f0f0 */
+/* Thin border color: #979797 */
 
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -17,17 +18,19 @@
 
 legend {
     font-size:2rem;
+    border:#979797 1px solid;
 }
 
-form {
+.labels {
     background-color:#f0f0f0;
+    border:#979797 1px solid;
 }
 
 .submit-btn {
     background-color:#1582f7;
     border:none;
     border-radius:3px;
-    color:white;
+    color:#ffffff;
 }
 
 /* Tablet size */
