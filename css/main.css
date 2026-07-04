@@ -12,5 +12,30 @@
     font-style: normal;
     font-variation-settings:
     "GRAD" 0;
-    font-size:1.25rem;
+    font-size:1rem;
+}
+
+legend {
+    font-size:2rem;
+}
+
+form {
+    background-color:#f0f0f0;
+}
+
+.submit-btn {
+    background-color:#1582f7;
+    border:none;
+    border-radius:3px;
+    color:white;
+}
+
+/* Tablet size */
+@media screen and (max-width:40rem) {
+
+}
+
+/* Desktop size */
+@media screen and (max-width:50rem) {
+
 }
