@@ -16,6 +16,11 @@
     font-size:1rem;
 }
 
+/* Base form styles */
+form {
+    background-color:#f0f0f0;
+}
+
 legend {
     font-size:2rem;
     background-color:#ffffff;
@@ -23,7 +28,6 @@ legend {
 }
 
 .labels {
-    background-color:#f0f0f0;
     border:#979797 1px solid;
 }
 
