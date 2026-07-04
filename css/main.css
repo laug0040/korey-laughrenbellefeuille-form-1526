@@ -28,6 +28,11 @@ legend {
     border:#979797 1px solid;
 }
 
+.labels {
+    display:flex;
+    flex-direction:column;
+}
+
 .submit-btn {
     background-color:#1582f7;
     border:none;
