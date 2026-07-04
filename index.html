@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Korey Form Validation</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+    <main class="form-container">
+        <h1>Form Assignment</h1>
+        <form id="contact-form" novalidate>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" required />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </main>
 </body>
+
 </html>
